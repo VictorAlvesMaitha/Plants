@@ -1,5 +1,5 @@
 import unittest
-from fibo import fibonacci
+from fibo import fibonacci, geometric_series_aprox
 
 class TestFibonacci(unittest.TestCase):
     def test_fibonacci_sequence(self):
