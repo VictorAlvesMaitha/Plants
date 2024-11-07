@@ -6,8 +6,11 @@ def fibonacci(n: int) -> float:
     fib_seq = [0, 1]  # Initialize with the first two Fibonacci numbers
     for i in range(2, n):  # Loop to generate the sequence
         next_value = fib_seq[i] + fib_seq[i-1]  
-        next_value += 1
         fib_seq.append(next_value)
-
     
     return fib_seq  
+
+def geometric_series_aprox(n: int, alfa: float) ->float:
+
+    total = [alfa**i for i in n]
+    return total
