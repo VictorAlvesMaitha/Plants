@@ -33,3 +33,7 @@ class TestFibonacci(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+# Output:
+# .....
+# let's see the output of the test
