@@ -1,34 +1,49 @@
 import unittest
-from fibo import fibonacci
+from fibo import text_analysis
 
-class TestFibonacci(unittest.TestCase):
-    def test_fibonacci_sequence(self):
-        # Test with n = 5
-        result = fibonacci(5)
-        expected = [0, 1, 1, 2, 3]
+class TestTextAnalysis(unittest.TestCase):
+    def test_basic_text(self):
+        text = "Hello world! This is a test. There are 2 sentences and 3 numbers: 1, 2, and 3."
+        result = text_analysis(text)
+        expected = {
+            'num_words': 14,
+            'num_sentences': 3,
+            'num_unique_words': 12,
+            'num_numbers': 4
+        }
         self.assertEqual(result, expected)
     
-    def test_fibonacci_zero(self):
-        # Test with n = 0
-        result = fibonacci(0)
-        expected = []
+    def test_empty_text(self):
+        text = ""
+        result = text_analysis(text)
+        expected = {
+            'num_words': 0,
+            'num_sentences': 0,
+            'num_unique_words': 0,
+            'num_numbers': 0
+        }
         self.assertEqual(result, expected)
     
-    def test_fibonacci_one(self):
-        # Test with n = 1
-        result = fibonacci(1)
-        expected = [0]
+    def test_text_without_numbers(self):
+        text = "This is a test without numbers."
+        result = text_analysis(text)
+        expected = {
+            'num_words': 6,
+            'num_sentences': 1,
+            'num_unique_words': 6,
+            'num_numbers': 0
+        }
         self.assertEqual(result, expected)
     
-    def test_fibonacci_negative(self):
-        # Test with negative n
-        with self.assertRaises(ValueError):
-            fibonacci(-5)
-    
-    def test_fibonacci_large_n(self):
-        # Test with n = 10
-        result = fibonacci(10)
-        expected = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+    def test_text_with_only_numbers(self):
+        text = "123 456 789"
+        result = text_analysis(text)
+        expected = {
+            'num_words': 3,
+            'num_sentences': 1,
+            'num_unique_words': 3,
+            'num_numbers': 3
+        }
         self.assertEqual(result, expected)
 
 if __name__ == '__main__':
