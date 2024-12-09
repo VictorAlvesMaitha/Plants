@@ -10,3 +10,6 @@ def fibonacci(n: int) -> float:
 
     
     return fib_seq  
+
+
+# lets's test the function
