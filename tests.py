@@ -51,4 +51,4 @@ if __name__ == '__main__':
 
 # Output:
 # .....
-# let's see the output of the test
+# assert result == expected
