@@ -48,15 +48,4 @@ class TestTextAnalysis(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# Output:
-# .....
-# new test babyyy
-
-# step by step
-# full_mode]
-#
-##
-#
-#
 #
