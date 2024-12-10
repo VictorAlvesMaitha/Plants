@@ -54,4 +54,5 @@ if __name__ == '__main__':
 # new test babyyy
 
 # step by step
-# full_mode
+# full_mode]
+#
