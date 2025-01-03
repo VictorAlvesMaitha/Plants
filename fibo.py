@@ -29,20 +29,4 @@ text = "Hello world! This is a test. There are 2 sentences and 3 numbers: 1, 2, 
 analysis = text_analysis(text)
 print(analysis)
 
-# lets's test the functions
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
-# testando o processo completo da AWS
+# teste
