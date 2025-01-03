@@ -41,3 +41,4 @@ print(analysis)
 # testando o processo completo da AWS
 # testando o processo completo da AWS
 # testando o processo completo da AWS
+# testando o processo completo da AWS
