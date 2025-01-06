@@ -46,8 +46,11 @@ class TestTextAnalysis(unittest.TestCase):
         }
         self.assertEqual(result, expected)
 
+def check_true(_condition: float) -> bool:
+    if _condition < 10:
+        return False
+    else:
+        return True
+
 if __name__ == '__main__':
     unittest.main()
-
-# Output:
-# .....
