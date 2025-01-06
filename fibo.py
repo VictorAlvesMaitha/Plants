@@ -34,3 +34,9 @@ def check_true(_condition: str) -> bool:
         return True
     else:
         return False
+    
+def check_true(_condition: float) -> bool:
+    if _condition < 10:
+        return False
+    else:
+        return True
