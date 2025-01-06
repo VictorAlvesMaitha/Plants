@@ -51,6 +51,13 @@ def check_true(_condition: float) -> bool:
         return False
     else:
         return True
+    
+
+def check_true(_condition: str) -> bool:
+    if _condition == "answer":
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     unittest.main()
