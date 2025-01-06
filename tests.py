@@ -54,7 +54,7 @@ def check_true(_condition: float) -> bool:
     
 
 def check_true(_condition: str) -> bool:
-    if _condition == "answer":
+    if _condition == "bad answer":
         return True
     else:
         return False
