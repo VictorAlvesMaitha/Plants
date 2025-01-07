@@ -42,3 +42,4 @@ def check_true(_condition: float) -> bool:
         return True
     
 # 0
+# 1
