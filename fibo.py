@@ -1,5 +1,6 @@
 import re
 
+
 def text_analysis(text):
     # Find all words
     words = re.findall(r'\b\w+\b', text)
@@ -23,6 +24,15 @@ def text_analysis(text):
         'num_unique_words': num_unique_words,
         'num_numbers': num_numbers
     }
+
+# Adição de loop infinito
+a = 10
+b = 100
+while a < b:
+    print("Maitha Tech!")
+
+# nomes de variáveis 
+a = 
 
 # Example usage
 text = "Hello world! This is a test. There are 2 sentences and 3 numbers: 1, 2, and 3."
