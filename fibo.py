@@ -1,32 +1,24 @@
-import re
-
-def text_analysis(text):
-    # Find all words
-    words = re.findall(r'\b\w+\b', text)
-    num_words = len(words)
+def generate_fibonacci(n):
+    """
+    Generate the first n Fibonacci numbers.
     
-    # Find all sentences
-    sentences = re.split(r'[.!?]', text)
-    num_sentences = len([s for s in sentences if s.strip() != ''])
+    :param n: The number of Fibonacci numbers to generate
+    :return: A list containing the first n Fibonacci numbers
+    """
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
     
-    # Find all unique words
-    unique_words = set(words)
-    num_unique_words = len(unique_words)
+    fibonacci_sequence = [0, 1]
+    for i in range(2, n):
+        next_number = fibonacci_sequence[-1] + fibonacci_sequence[-2]
+        fibonacci_sequence.append(next_number)
     
-    # Find all numbers
-    numbers = re.findall(r'\b\d+\b', text)
-    num_numbers = len(numbers)
-    
-    return {
-        'num_words': num_words,
-        'num_sentences': num_sentences,
-        'num_unique_words': num_unique_words,
-        'num_numbers': num_numbers
-    }
+    return fibonacci_sequence
 
 # Example usage
-text = "Hello world! This is a test. There are 2 sentences and 3 numbers: 1, 2, and 3."
-analysis = text_analysis(text)
-print(analysis)
-
-# lets's test the function
+n = 10
+print(f"The first {n} Fibonacci numbers are: {generate_fibonacci(n)}")
