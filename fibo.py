@@ -1,10 +1,4 @@
 def generate_fibonacci(n):
-    """
-    Generate the first n Fibonacci numbers.
-    
-    :param n: The number of Fibonacci numbers to generate
-    :return: A list containing the first n Fibonacci numbers
-    """
     if n <= 0:
         return []
     elif n == 1:
@@ -19,6 +13,8 @@ def generate_fibonacci(n):
     
     return fibonacci_sequence
 
-# Example usage
-n = 10
+# Casos de teste:
+# variável de tipo errado
+n = "oito"
 print(f"The first {n} Fibonacci numbers are: {generate_fibonacci(n)}")
+
