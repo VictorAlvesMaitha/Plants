@@ -14,7 +14,7 @@ def generate_fibonacci(n):
     return fibonacci_sequence
 
 # Casos de teste:
-# variável de tipo errado
+# variável de tipo errado - 1
 n = "oito"
 print(f"The first {n} Fibonacci numbers are: {generate_fibonacci(n)}")
 
