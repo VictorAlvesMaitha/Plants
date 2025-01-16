@@ -18,3 +18,4 @@ def generate_fibonacci(n):
 n = "oito"
 print(f"The first {n} Fibonacci numbers are: {generate_fibonacci(n)}")
 
+# 1
