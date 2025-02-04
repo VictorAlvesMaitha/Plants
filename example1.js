@@ -60,5 +60,5 @@ let cosineApprox = approximateCosine('one', 10);
 console.log("Cosine approximation (1 radian):", cosineApprox);
 
 // Approximate sine of 1 radian (with 10 terms in series)
-let sineApprox = approximateSine(1, 10);
+let sineApprox = approximateSine(1, 10);;
 console.log("Sine approximation (1 radian):", sineApprox);
